@@ -13,6 +13,7 @@
       display: flex;
       background: #f9fafb;
       color: #111827;
+      line-height: 1.6;
     }
 
     .sidebar {
@@ -36,6 +37,7 @@
       text-decoration: none;
       margin: 12px 0;
       font-weight: bold;
+      font-size: 14px;
     }
 
     .sidebar a:hover {
@@ -55,10 +57,17 @@
     h1 {
       margin: 0;
       font-size: 36px;
+      line-height: 1.2;
     }
 
     h2 {
       margin-bottom: 10px;
+      border-bottom: 1px solid #e5e7eb;
+      padding-bottom: 6px;
+    }
+
+    h3 {
+      margin-bottom: 4px;
     }
 
     .muted {
@@ -67,6 +76,14 @@
 
     ul {
       padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    a {
+      color: #2563eb;
     }
 
     @media (max-width: 860px) {
@@ -105,23 +122,29 @@
 <section id="about">
   <h1>William Raymond Revilla</h1>
   <p class="muted">Data Analyst • Quezon City, Philippines</p>
+
   <p>
     Data Analyst with 5 years of experience in reporting, dashboard development, and data automation.
     Strong background in SQL, Python, and statistical analysis, with hands-on experience supporting
-    campaign performance and business insights. Currently pursuing a Master of Statistics, focusing on
-    data-driven decision making and analytical modeling.
+    campaign performance and business insights.
+  </p>
+
+  <p>
+    Currently pursuing a Master of Statistics, focusing on data-driven decision-making and analytical modeling.
+    Interested in applying quantitative methods to consumer insights, survey-based research, and business analytics.
   </p>
 </section>
 
 <section id="skills">
   <h2>Skills</h2>
+
   <ul>
     <li><strong>Programming for Analytics:</strong> Python (Pandas, NumPy, Matplotlib, Seaborn, Streamlit), R (tidyverse)</li>
     <li><strong>Data Querying:</strong> SQL (MySQL, PostgreSQL; joins, aggregations, CTEs, window functions)</li>
-    <li><strong>Visualization & BI:</strong> Power BI, Looker Studio, Excel / Google Sheets (Pivot Tables, dashboards)</li>
+    <li><strong>Visualization & BI:</strong> Power BI, Looker Studio, Excel / Google Sheets (PivotTables, dashboards)</li>
     <li><strong>Data Processing:</strong> Web scraping (Selenium, BeautifulSoup), API integration, automated reporting workflows</li>
     <li><strong>Analytics & Statistical Methods:</strong> Regression, correlation analysis, hypothesis testing, A/B testing, exploratory data analysis</li>
-    <li><strong>Tools:</strong> VS Code (Jupyter), Jamovi, Google Analytics, Git</li>
+    <li><strong>Tools:</strong> VS Code, Jupyter, Jamovi, Google Analytics, Git</li>
   </ul>
 
   <p class="muted">
@@ -132,17 +155,17 @@
 <section id="experience">
   <h2>Experience</h2>
 
-  <p><strong>Momentum Media (Under KMC Solutions)</strong></p>
+  <h3>Momentum Media <span class="muted">(Under KMC Solutions)</span></h3>
   <p class="muted">Marketing Data Analyst • Sep 2024 – Present</p>
   <ul>
-    <li>Analyzed campaign and brand placement data across multiple brands to generate performance reports, improving reporting accuracy and turnaround time.</li>
-    <li>Automated data extraction and reporting workflows using Python (Selenium, Pandas), reducing manual workload and streamlining daily processes.</li>
+    <li>Analyzed campaign and brand placement data across multiple brands to generate performance reports, improving accuracy and turnaround time.</li>
+    <li>Automated data extraction and reporting workflows using Python (Selenium, Pandas), reducing manual workload and streamlining processes.</li>
     <li>Built lightweight reporting web applications using Streamlit to improve accessibility of internal reporting.</li>
     <li>Developed dashboards using Google Analytics and Looker Studio to monitor campaign performance and key metrics in real time.</li>
-    <li>Performed exploratory data analysis and validation to identify trends and support data-driven decision making.</li>
+    <li>Performed exploratory data analysis and validation to identify trends and support data-driven decision-making.</li>
   </ul>
 
-  <p><strong>Bayer</strong></p>
+  <h3>Bayer</h3>
   <p class="muted">Analytics Expert • June 2023 – April 2024</p>
   <ul>
     <li>Cleaned and structured datasets by validating entries and mapping correct tags to support accurate KPI reporting.</li>
@@ -150,37 +173,35 @@
     <li>Ensured data quality and consistency across reporting pipelines.</li>
   </ul>
 
-  <p><strong>TaskUs</strong></p>
+  <h3>TaskUs</h3>
   <p class="muted">Business Insights Analyst • June 2021 – June 2023</p>
   <ul>
     <li>Managed performance metrics across accounts and delivered weekly reporting through dashboards and structured reports.</li>
-    <li>Improved reporting workflows and spreadsheet functionality to support faster and more accurate decision making.</li>
+    <li>Improved reporting workflows and spreadsheet functionality to support faster and more accurate decision-making.</li>
     <li>Collaborated with data engineering teams to support dashboard automation and validation of data structures.</li>
   </ul>
 
-  <p><strong>Philippine Survey and Research Center</strong></p>
-<p class="muted">Research Associate • Nov 2019 – Apr 2020</p>
-<ul>
-  <li>Worked as part of a research team focused on designing data collection approaches and conducting exploratory analyses across multiple projects.</li>
-</ul>
-
+  <h3>Philippine Survey and Research Center</h3>
+  <p class="muted">Research Associate • Nov 2019 – Apr 2020</p>
+  <ul>
+    <li>Worked as part of a research team focused on designing data collection approaches and conducting exploratory analysis across multiple projects.</li>
+  </ul>
 </section>
 
 <section id="education">
   <h2>Education</h2>
 
-  <p><strong>University of the Philippines</strong></p>
-  <p class="muted">Master of Statistics (2023 – Present)</p>
+  <h3>University of the Philippines</h3>
+  <p class="muted">Master of Statistics • 2023 – Present</p>
   <ul>
     <li>Relevant Coursework: Probability Theory, Statistical Inference, Regression Analysis, Sampling Design, Categorical Data Analysis</li>
   </ul>
 
-  <p><strong>De La Salle University</strong></p>
-  <p class="muted">BS Mechanical Engineering (2013–2018)</p>
+  <h3>De La Salle University</h3>
+  <p class="muted">BS Mechanical Engineering • 2013 – 2018</p>
   <ul>
-    <li>Thesis: Designed and developed a controlled environment growth chamber for agriculture, focusing on optimizing conditions for Roman lettuce production.</li>
+    <li>Thesis: Designed and developed a controlled environment growth chamber for agriculture, optimizing conditions for Roman lettuce production.</li>
   </ul>
-
 </section>
 
 <section id="certs">
@@ -195,9 +216,9 @@
 
 <section id="contact">
   <h2>Contact</h2>
-  <p>Email: william.raymond.revilla92897@gmail.com</p>
+  <p>Email: <a href="mailto:william.raymond.revilla92897@gmail.com">william.raymond.revilla92897@gmail.com</a></p>
   <p>Phone: 0916 510 6737</p>
-  <p>LinkedIn: linkedin.com/in/wrnr1997</p>
+  <p>LinkedIn: <a href="https://linkedin.com/in/wrnr1997" target="_blank">linkedin.com/in/wrnr1997</a></p>
 </section>
 
 </div>
